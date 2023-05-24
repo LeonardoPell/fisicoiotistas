@@ -1,1 +1,5 @@
-<p>botoes works!</p>
+<main id="containerBotoes">
+    <div class="botoes">
+        <button (click)="mudaCorEsteira(esteira)" [ngStyle]="{'background-color': (esteira.cor === 'verde') ? 'green' : 'red'}" *ngFor="let esteira of esteiras">ES-{{esteira.id}}</button>
+    </div>
+</main>
