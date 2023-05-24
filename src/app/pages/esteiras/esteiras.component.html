@@ -1,0 +1,21 @@
+<main>
+    <aside>
+        <div class="logo">
+            <img src="../../../assets/logo.png" alt="logo">
+        </div>
+    </aside>
+    <section id="esteirasContainer">
+        <div class="primeiraFileira">
+            <div *ngFor="let equipamento of primeiraFileiraEsteiras" class="esteira">
+                <img (click)="mudaCorEsteira(equipamento)"  [src]="'../../../assets/equipamentos/esteira-'+equipamento.cor+'.svg'" alt="icon-esteira">
+                <p style="color: white;">ES-{{equipamento.id}}</p>
+            </div>
+        </div>
+        <div class="segundaFileira">
+            <div *ngFor="let equipamento of segundaFileiraEsteiras" class="esteira">
+                <img style="transform: rotate(180deg);" (click)="mudaCorEsteira(equipamento)"  [src]="'../../../assets/equipamentos/esteira-'+equipamento.cor+'.svg'" alt="icon-esteira">
+                <p style="color: white;">ES-{{equipamento.id}}</p>
+            </div>
+        </div>
+    </section>
+</main>
