@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "estacio": "concurrently \"json-server --watch db.json\" \"ng serve\"",
     "db": "json-server --watch db.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -30,6 +31,7 @@
     "@angular/cli": "~16.0.2",
     "@angular/compiler-cli": "^16.0.0",
     "@types/jasmine": "~4.3.0",
+    "concurrently": "^8.0.1",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
