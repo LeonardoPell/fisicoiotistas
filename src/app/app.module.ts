@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { EsteirasComponent } from './pages/esteiras/esteiras.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BotoesComponent } from './pages/botoes/botoes.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EsteirasComponent,
-    BotoesComponent
+    BotoesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
